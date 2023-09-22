@@ -24,7 +24,25 @@ def denirohist(file):
     plt.xlabel("Score")
     plt.ylabel("Frequency")
     plt.show()
+    plt.savefig("hist_viz.png")
+    return
 
 
-print(denirostats("deniro.csv"))
-denirohist("deniro.csv")
+if __name__ == "__main__":
+    summary = denirostats("deniro.csv")
+    denirohist("deniro.csv")
+    str1 = f"{summary.to_markdown()}"
+    str2 = "![Alt text](hist_viz.png)"
+
+    file_path = "./report.md"
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(
+            "Summary Statistics"
+            + "\n" * 3
+            + str1
+            + "\n" * 3
+            + "Histogram"
+            + "\n" * 3
+            + str2
+        )
