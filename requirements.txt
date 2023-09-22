@@ -1,5 +1,6 @@
 polars
 matplotlib
+tabulate
 
 pylint
 pytest
