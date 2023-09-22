@@ -5,7 +5,7 @@ This repo uses the python template generated in Week 1 to employ a polars script
 
 The specific data set used in this project is a simple one; it contains all Robert De Niro movies and their corresponding Rotten Tomatoes scores. The data of interest are the scores themselves. 
 
-I have included a pdf report in the repo that summarises the descriptive statistics of interest and displays the visualization.
-
 ## Instructions
 Use Github codespaces, which will allow for a container to be built with the required packages, as detailed in requirements.txt. In the terminal, one can use `make install` to install all necessary packages from requirements.txt and upgrade the version of pip. After this, `make format` helps with visually-appealing formatting of the code. One can also use `make lint` to lint the code and `make test` to run the provided tests on the code. One can also directly run the scripts using `python main.py` and `python test_main.py`.
+
+Running `python main.py` will also generate a summary report to the repo containing the summary statistics of the movie scores and the histogram visualization.
