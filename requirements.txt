@@ -2,6 +2,7 @@ polars
 matplotlib
 tabulate
 pandas
+pyarrow
 
 pylint
 pytest

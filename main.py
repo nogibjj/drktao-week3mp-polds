@@ -1,6 +1,7 @@
 import polars as pl
 import matplotlib.pyplot as plt
 import statistics
+import pandas as pd
 
 
 def denirostats(file):
@@ -31,7 +32,7 @@ def denirohist(file):
 if __name__ == "__main__":
     summary = denirostats("deniro.csv")
     denirohist("deniro.csv")
-    str1 = f"{summary.to_markdown()}"
+    str1 = f"{summary.to_pandas().to_markdown()}"
     str2 = "![Alt text](hist_viz.png)"
 
     file_path = "./report.md"
