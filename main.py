@@ -1,7 +1,6 @@
 import polars as pl
 import matplotlib.pyplot as plt
 import statistics
-import pandas as pd
 
 
 def denirostats(file):
