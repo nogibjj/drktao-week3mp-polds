@@ -1,6 +1,7 @@
 polars
 matplotlib
 tabulate
+pandas
 
 pylint
 pytest
